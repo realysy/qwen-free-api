@@ -29,7 +29,7 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "npm i && npm i -g pm2"
+        run: "npm install"
 
       - name: Build step
         run: "npm run build"
@@ -38,7 +38,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "dmx-tyqw"
-          entrypoint: "index.js"
-          root: "./dist"
-          
+          entrypoint: "jsr:@deno/nextjs-start"
+          root: "."
+          include: .next, public
           
