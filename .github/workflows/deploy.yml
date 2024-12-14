@@ -38,7 +38,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "dmx-tyqw"
-          entrypoint: "jsr:@deno/nextjs-start"
-          root: "."
-          include: .next, public
+          entrypoint: "index.js"
+          root: "./dist"
+          
           
