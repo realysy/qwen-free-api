@@ -38,7 +38,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "dmx-tyqw"
-          entrypoint: "welcome.html"
+          entrypoint: "index.js"
           root: "./dist"
           
           
